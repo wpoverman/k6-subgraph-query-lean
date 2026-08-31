@@ -1,0 +1,32 @@
+import K6Prefix
+import OnlineRamsey
+
+/-!
+# Trust audit
+
+Run with `lake env lean TrustAudit.lean`.  This file prints the axiom
+dependencies of representative endpoint theorems from each major layer.
+-/
+
+#print axioms K6Prefix.nineEdgePrefixClassification
+#print axioms OnlineRamsey.bernoulli_trueAnswerCount_mass
+#print axioms OnlineRamsey.bernoulli_adaptiveUpperTail_mass_le_choose_mul_pow
+#print axioms OnlineRamsey.PolicyRelabeling.finPolicy_success_iff
+#print axioms OnlineRamsey.RandomBoard.measure_codegreeAtLeastEvent_le
+#print axioms OnlineRamsey.PrefixSoundness.concreteTableLocal
+#print axioms OnlineRamsey.PrefixSoundness.ordinaryNineEdge_sound
+#print axioms OnlineRamsey.HostGood.subgraphH3Charge_le
+#print axioms OnlineRamsey.labelledCopies_K5MinusEdge_le_six_mul_charge
+#print axioms OnlineRamsey.labelledCopies_Q_le_qCharge
+#print axioms OnlineRamsey.K4Moments.graphK4Count_secondMoment
+#print axioms OnlineRamsey.K4OneTrial.oneTrialSuccess_lower
+#print axioms OnlineRamsey.Amplification.repeatedK4FailureMass_toReal_le_half
+#print axioms OnlineRamsey.AsymptoticScale.queryBudget_cubic_threshold
+#print axioms OnlineRamsey.LowerAssembly.ordinaryOrder_from_checkedTable
+#print axioms OnlineRamsey.LowerAssembly.success_lt_half_of_allOrders
+#print axioms OnlineRamsey.QueryComplexity.k6_powerLaw_of_matching_bounds
+#print axioms OnlineRamsey.UnconditionalLower.exists_global_queryBudget_lower_constant
+#print axioms OnlineRamsey.UnconditionalUpper.slackBucketAchievable
+#print axioms OnlineRamsey.UnconditionalUpper.exists_finiteCubicPowerLaw
+#print axioms OnlineRamsey.InfinitePolicyBridge.infiniteAchievable_iff_achievable
+#print axioms OnlineRamsey.InfiniteUnconditional.exists_infiniteCubicPowerLaw
